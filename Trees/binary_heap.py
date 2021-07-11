@@ -1,6 +1,7 @@
 # Implementation of binary heap
+import random
 
-class BinaryHeaP(Object):
+class BinaryHeaP(object):
     def __init__(self, arr=None):
         self._list = [0]
         if arr:
@@ -54,3 +55,10 @@ class BinaryHeaP(Object):
         temp = self._list[index1]
         self._list[index1] = self._list[index2]
         self._list[index2] = temp 
+
+
+def test_heap():
+    bh = BinaryHeap()
+    values = random.sample(range(-15, 15), 30)
+    print(values)
+
